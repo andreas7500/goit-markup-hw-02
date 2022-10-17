@@ -1,8 +1,8 @@
 :root {
   --main-text-color: #212121;
   --secondary-text-color: #ffffff;
-  --ouwer-text-color: #757575;
-  --acent-color: #2196f3;
+  --owner-text-color: #757575;
+  --accent-color: #2196f3;
   --contener-color: #eeeeee;
   --logo-color-text: #000000;
   --buttons-port-color: #f5f4fa;
@@ -15,10 +15,129 @@
   --main-font: Roboto, sans-serif;
 }
 
+.link{
+  text-decoration: none;
+  font-style: normal;
+}
+.list{
+  list-style: none;
+}
+
+
 body {
   background-color: #ffffff;
   color: #212121;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
+}
+
+/* index */
+
+/* header */
+.header{
+  background-color: var(--secondary-text-color);
+}
+
+
+.header-logo{
+font-family: 'Raleway';
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+color: #000000;
+}
+.header-logo-web{
+color: var(--accent-color)
+}
+
+
+.header-list{
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--main-text-color);
+}
+
+.current{
+  color: var(--accent-color);
+}
+
+.header-list.link:hover,
+.header-list.link:focus{
+  color: var(--accent-color);
+}
+
+
+
+.header-mail-tel{
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--owner-text-color);
+}
+.header-mail-tel.link:hover,
+.header-mail-tel.link:focus{
+ color: var(--accent-color);
+
+}
+/* main index */
+.hero-section{
+  background: var(--background-footer-color);
+}
+
+.hero-title{
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: var(--secondary-text-color)
+}
+
+.hero-btn{
+font-family: inherit;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.88;
+letter-spacing: 0.06em;
+color: var(--background-color);
+background: var(--accent-color);
+}
+.hero-btn:hover,
+.hero-btn:focus{
+background-color: #188CE8;
+cursor: pointer;
+
+}
+
+
+  .visually-hidden{
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+.title-benefits{
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-transform: uppercase;
+color: var(--main-text-color);
+}
+
+.slogan-benefits{
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+color: var(--owner-text-color);
 }
